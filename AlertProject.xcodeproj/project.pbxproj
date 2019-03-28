@@ -12,6 +12,7 @@
 		23ACBCD1224D414400629DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23ACBCCF224D414400629DAD /* Main.storyboard */; };
 		23ACBCD3224D414400629DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23ACBCD2224D414400629DAD /* Assets.xcassets */; };
 		23ACBCD6224D414400629DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23ACBCD4224D414400629DAD /* LaunchScreen.storyboard */; };
+		23ACBCDF224D447400629DAD /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ACBCDE224D447400629DAD /* RegisterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		23ACBCD2224D414400629DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23ACBCD5224D414400629DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23ACBCD7224D414400629DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23ACBCDE224D447400629DAD /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		23ACBCCA224D414400629DAD /* AlertProject */ = {
 			isa = PBXGroup;
 			children = (
+				23ACBCDD224D442200629DAD /* Models */,
 				23ACBCCB224D414400629DAD /* AppDelegate.swift */,
 				23ACBCCD224D414400629DAD /* ViewController.swift */,
 				23ACBCCF224D414400629DAD /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				23ACBCD7224D414400629DAD /* Info.plist */,
 			);
 			path = AlertProject;
+			sourceTree = "<group>";
+		};
+		23ACBCDD224D442200629DAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23ACBCDE224D447400629DAD /* RegisterModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				23ACBCCE224D414400629DAD /* ViewController.swift in Sources */,
 				23ACBCCC224D414400629DAD /* AppDelegate.swift in Sources */,
+				23ACBCDF224D447400629DAD /* RegisterModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
