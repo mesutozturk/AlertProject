@@ -13,7 +13,10 @@ class RegisterModel: NSObject {
     var Password = ""
     var ConfirmPassword = ""
     
-    var isValid = false
+    var isValid : Bool {
+        get {
+            return validate().0
+        }}
     
     func validate() -> (Bool, String) {
         var message = "";
@@ -47,7 +50,7 @@ class RegisterModel: NSObject {
         return (isValid,message)
     }
     
-   private func checkRange(body: String, min: Int, max: Int) -> Bool {
+    private func checkRange(body: String, min: Int, max: Int) -> Bool {
         let result = body.count < min || body.count > max
         return result
     }

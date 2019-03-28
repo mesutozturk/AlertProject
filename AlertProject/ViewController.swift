@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         registerModel.Password = txtPassword.text!
         registerModel.ConfirmPassword = txtConfirmPassword.text!
         
-        var result = registerModel.validate()
+        let result = registerModel.validate()
         if !result.0 {
             let alert = UIAlertController(title: "Error", message: result.1, preferredStyle: .alert)
             
